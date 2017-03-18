@@ -2,11 +2,14 @@
 <html>
 
 <head>
-<title>Wiki Viewer</title>
+    <meta charset="UTF-8">
+    <title>Wiki Viewer</title>
 </head>
+
 <body>
 
-<script src="jquery-3.1.1.min.js"></script>
-<script src="main.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
