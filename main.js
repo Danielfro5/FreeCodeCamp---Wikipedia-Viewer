@@ -1,6 +1,6 @@
-var userSearchTerm = "test";
+var userSearchTerm = window.prompt("Enter Search Term","...");
 
-//create textarea search box and feed input in realtime to userSearchTerm variable.
+
 
 $(function() {
 
