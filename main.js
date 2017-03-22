@@ -7,8 +7,9 @@ function searchFunction() {
     searchStringMulti = "";
     userSearchString = document.getElementById("searchBar").value;
     $(function() {
-
+        document.getElementById("status").innerHTML = "loading...";
         $.getJSON("https:///crossorigin.me/https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=" + (userSearchString), function(wikiData) {
+            document.getElementById("status").innerHTML = "search successful";
             var termLength = wikiData[1].length;
             for (i = 1; i < termLength; i++) {
                 searchStringHolder =
@@ -23,7 +24,8 @@ function searchFunction() {
 }
 
 $(function() {
-$('#searchBar').keypress(function(e){
-   if(e.keyCode==13)
-   $('#searchBarBtn').click();
- });});
+    $('#searchBar').keypress(function(e) {
+        if (e.keyCode == 13)
+            $('#searchBarBtn').click();
+    });
+});
