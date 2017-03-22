@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h3>Wiki Search Tool</h3>
+    <h2>Wiki Search Tool</h2>
     <input type="text" id="searchBar">
     <input type="button" class="btn btn-xs" id="searchBarBtn" value="Search" onclick="javascript:searchFunction()">
     <br>
